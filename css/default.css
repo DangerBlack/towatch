@@ -1,0 +1,13 @@
+.rememberMe{
+	margin-right:5px;
+}
+.remembered{
+	margin-right:5px;
+}
+#towatch li{
+	cursor:pointer;
+}
+#towatch li:hover{
+	text-decoration: line-through;
+	
+}
