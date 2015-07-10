@@ -11,3 +11,8 @@
 	text-decoration: line-through;
 	
 }
+#random-chose{
+	margin-top:5px;
+	position:relative;
+	display:none;
+}

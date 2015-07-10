@@ -4,6 +4,7 @@ $("#clear").click(function(){
 });
 $("#random").click(function(){
 	$("#random-chose").html("<b>Film Scelto: </b><i>"+getRandomName()+"</i>");
+	$("#random-chose").show();
 });
 function upgradeLists(){
 	$("#main").ready(function(){
@@ -70,6 +71,9 @@ function removeLista(id){
 function getLista(){
 	var list=localStorage.getItem("davedere");
 	if (typeof list == 'undefined') {
+		list="[]";
+	}
+	if(list==null){
 		list="[]";
 	}
 	list=JSON.parse(list);

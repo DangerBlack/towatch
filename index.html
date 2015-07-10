@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="davedere/css/default.css">
-<script src="davedere/js/default.js" type="text/javascript"></script>
+<link rel="stylesheet" href="towatch/css/default.css">
+<script src="towatch/js/default.js" type="text/javascript"></script>
 <script>
-	setTimeout(function(){upgradeLists();},5000);
-	updateMemorisedList();
+	$(document).ready(function(){
+		setTimeout(function(){upgradeLists();},5000);
+		updateMemorisedList();
+	});
 </script>
 <div class="panel panel-info ">
 	<a href="#davedere" class="list-group-item collapsed panel-info" data-toggle="collapse" data-target="#davedere" aria-expanded="false">
@@ -11,7 +13,7 @@
 	<div id="davedere" class="sublinks collapse.in panel-body" aria-expanded="false">
 		<button class="btn btn-default" id="clear" type="button">Cancella Elenco</button>
 		<button class="btn btn-default" id="random" type="button">Random Movie</button><br />
-		<label id="random-chose"></label>
+		<div id="random-chose" class="alert alert-success" role="alert"></div>
 		<hr>
 		<ul id="towatch">
 		</ul>
